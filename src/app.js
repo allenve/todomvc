@@ -4,6 +4,8 @@
  * @author yupeng(yupeng12@baidu.com)
  * @created: 2019/07/05
  */
+import san from 'san';
+import '../css/main.less';
 
 const template = `
 <template>
@@ -18,6 +20,7 @@ const template = `
             <div class="list">
                 <ul>
                     <li s-for="item in listData">
+                        <input type="checkbox" name="active" />
                         <span>{{item.value}}</span>
                         <i class="close-icon"
                             on-click="deleteItem(item)">x</i>
